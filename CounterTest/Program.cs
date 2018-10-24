@@ -13,12 +13,10 @@ namespace Clock
         {
             Clock myClock = new Clock();
 
-            Console.WriteLine("1 hour clock");
-            for ( int i = 0; i < 3600; i++)
+            for ( ; ; )
             {
-                Thread.Sleep(1000);
                 myClock.Second();
-                Console.Write("\r" + myClock.Print());
+                Console.WriteLine(myClock.Print()); ///New line created every increment
             }
         }
     }
