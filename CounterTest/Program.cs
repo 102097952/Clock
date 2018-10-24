@@ -13,7 +13,8 @@ namespace Clock
         {
             Clock myClock = new Clock();
 
-            for ( ; ; )
+            Console.WriteLine("1 hour clock");
+            for ( int i = 0; i < 3600; i++)
             {
                 Thread.Sleep(1000);
                 myClock.Second();
